@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body >
+    <button id="mode">mode</button>
+    <div id="clock" class="box">
+        <h2>
+            curent time and date
+        </h2>
+        <h2 id="currtime"> 00:00:00</h2>
+        <h2 id="currdate">01/01/2000
+
+        </h2>
+    </div>
+
+    <div class="box">
+ <h2>stop watch</h2>
+ <h2 id="stopwatch">00:00:00</h2>
+ <button onclick="startstopwatch()">start</button>
+ <button onclick="stopStopwatch()">stop</button>
+ <button onclick="resetStopwatch()">reset</button>
+    </div>
+
+    <div class="box">
+        <h2>timer</h2>
+        <input type="number" name="" id="timerinput" placeholder="seconds">
+        <button onclick="startTimer()" >start</button>
+         <h2 id="timer">00:00:00</h2>
+
+    </div>
+    <div class="box">
+        <h2>alarm clock</h2>
+        <input type="time" id="alarminput">
+        <button onclick="setAlarm()">set alarm</button>
+        <button onclick="stopAlarm()">stop alarm</button>
+        <p id="alarmStatus"></p>
+        <audio src="" id="alarmSound"></audio>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+    
